@@ -152,8 +152,8 @@ terraform destroy
 Type **yes** to confirm.
 
 ## Notes
-**Security:** Do not commit sensitive information like passwords to version control.
-**Costs:** Be aware of Azure costs associated with running these resources.
+* **Security:** Do not commit sensitive information like passwords to version control.
+* **Costs:** Be aware of Azure costs associated with running these resources.
 
 ## Troubleshooting
 * Ensure you have the necessary Azure permissions.
@@ -164,4 +164,21 @@ Type **yes** to confirm.
 
 - [Terraform Azure Provider Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 - [Azure Terraform Samples](https://github.com/Azure/terraform)
+
+  
+---
+
+## **Final Notes**
+
+- **Sensitive Data**: Ensure that `terraform.tfvars` or any files containing sensitive data are not committed to GitHub. Add them to `.gitignore`.
+
+- **Testing**: Before pushing to GitHub, run `terraform validate` and `terraform fmt` to validate and format your code.
+
+- **Version Control**: Commit your changes with meaningful messages.
+
+```bash
+git add .
+git commit -m "Add infrastructure provisioning with Terraform"
+git push origin main
+```
 
