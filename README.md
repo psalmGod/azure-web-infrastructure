@@ -26,7 +26,7 @@ This project provisions a web infrastructure stack on Azure using Terraform. It 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/azure-web-infrastructure.git
+git clone https://github.com/mattmpe09/azure-web-infrastructure.git
 cd azure-web-infrastructure
 ```
 ### 2. Authenticate with Azure
